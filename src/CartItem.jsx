@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { removeItem, updateQuantity } from "./CartSlice";
+import "./CartItem.css";
 
 function CartItem({ onHome, onPlants, onCart, cartCount }) {
   const dispatch = useDispatch();
