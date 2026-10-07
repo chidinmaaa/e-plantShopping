@@ -50,6 +50,7 @@ function CartItem({ onHome, onPlants, onCart, cartCount }) {
           </div>
         ) : (
           <>
+          <div className="cart-items">
             {cartItems.map((item) => {
               const itemPrice = getPrice(item.cost);
               const itemTotal = itemPrice * item.quantity;
@@ -117,6 +118,7 @@ function CartItem({ onHome, onPlants, onCart, cartCount }) {
                 </article>
               );
             })}
+            </div>
 
             <section className="cart-summary">
               <h2>
